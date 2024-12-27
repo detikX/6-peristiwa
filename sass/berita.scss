@@ -97,3 +97,10 @@
 .clear {
     clear: both;
 }
+
+.is-mobile {
+    display: none !important;
+    @media screen and (max-width: 768px) {
+        display: block !important;
+    }
+}
