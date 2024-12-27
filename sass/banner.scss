@@ -36,6 +36,17 @@
             left: 55%;
             top: 60%;
             transform: translate(-50%, -50%);
+            @media screen and (max-width: 768px) {
+                left: 84%;
+                top: 36%;
+            }
+        }
+        &-two {
+            position: absolute;
+            // right: 15%;
+            left: 35%;
+            top: 55%;
+            transform: translate(-50%, -50%);
         }
     }
 
