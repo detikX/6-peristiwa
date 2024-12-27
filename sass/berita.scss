@@ -104,3 +104,27 @@
         display: block !important;
     }
 }
+
+.with-bg {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("../img/bg.jpg");
+        // background-attachment: fixed;
+        background-size: contain;
+        background-position: center;
+        background-repeat: repeat;
+        z-index: -1;
+        @media screen and (max-width: 768px) {
+            background-size: cover;
+        }
+    }
+    &::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, black, rgba(black, 0.3), black);
+    }
+}

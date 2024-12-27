@@ -620,9 +620,11 @@ section {
         display: inline-block;
         width: 45%;
         vertical-align: top;
+        margin-left: 52px;
         @media screen and (max-width: 768px) {
             display: block;
             width: 100%;
+            margin-left: 0;
         }
         p {
             color: #f2f2f2;
@@ -631,7 +633,7 @@ section {
     }
     .foto {
         position: absolute;
-        right: -8%;
+        right: -16%;
         opacity: 0.5;
         width: 40%;
         z-index: -1;
