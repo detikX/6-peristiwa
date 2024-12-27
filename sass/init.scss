@@ -1,6 +1,6 @@
 // 003a70
 
-@import url("https://fonts.googleapis.com/css2?family=Zain:wght@300;400;900&family=Bitter:wght@400;600&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto&family=Outfit:wght@300;400;900&family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zain:wght@300;400;900&family=Bitter:wght@400;600&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto&family=Outfit:wght@300;400;900&family=Mulish&display=swap");
 
 $primary: #284863; //(40,72,99)
 $secondary: #33a4b9; //(51,164,185)
@@ -157,14 +157,15 @@ section {
     // background: #b9e7f2;
     // background: linear-gradient(to bottom, #003a70, #b9e7f2);
     position: relative;
-    &::before {
-        content: "";
-        position: fixed;
-        background: url("../img/batik.png");
-        background-attachment: fixed;
-        background-size: contain;
-        background-repeat: repeat;
+
+    p {
+        font-family: "jost", sans-serif !important;
+        font-size: 1.3rem;
+        @media screen and (max-width: 768px) {
+            font-size: 1.1rem;
+        }
     }
+
     h3 {
         // color: $colorred;
         font-family: "Fraunces", sans-serif !important;
@@ -173,8 +174,8 @@ section {
         font-size: 5.5rem;
         line-height: 1;
         @media screen and (max-width: 768px) {
-            font-size: 2.5rem;
-            line-height: 1.1;
+            font-size: 3rem;
+            line-height: 0.9;
         }
     }
     strong {
@@ -296,6 +297,7 @@ section {
     width: 1080px;
     position: relative;
     margin: 0 auto;
+    z-index: 8;
     @media screen and (max-width: 766px) {
         width: 90%;
         margin: 0 auto;
@@ -334,11 +336,11 @@ main {
     // background: $colorred;
 }
 
-h4,
-h5 {
-    font-family: "Jost", sans-serif !important;
-    font-weight: bold;
-}
+// h4,
+// h5 {
+//     font-family: "Jost", sans-serif !important;
+//     font-weight: bold;
+// }
 
 /* the slides */
 .slick-slide {
@@ -607,7 +609,7 @@ section {
     .judul {
         display: inline-block;
         width: 45%;
-        vertical-align: middle;
+        vertical-align: top;
         @media screen and (max-width: 768px) {
             display: block;
             width: 100%;
@@ -616,14 +618,14 @@ section {
     .data {
         display: inline-block;
         width: 35%;
-        vertical-align: middle;
+        vertical-align: top;
         @media screen and (max-width: 768px) {
             display: block;
             width: 100%;
         }
         p {
             color: #f2f2f2;
-            font-size: 1rem;
+            // font-size: 1rem;
         }
     }
     .foto {
