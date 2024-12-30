@@ -294,7 +294,7 @@ section {
 }
 
 .wrap-kaleidoskop {
-    width: 1080px;
+    width: 1140px;
     position: relative;
     margin: 0 auto;
     z-index: 8;
@@ -608,7 +608,7 @@ section {
     position: relative;
     .judul {
         display: inline-block;
-        width: 36%;
+        width: 32%;
         vertical-align: top;
         @media screen and (max-width: 768px) {
             display: block;
@@ -620,7 +620,7 @@ section {
         display: inline-block;
         width: 45%;
         vertical-align: top;
-        margin-left: 52px;
+        margin-left: 62px;
         @media screen and (max-width: 768px) {
             display: block;
             width: 100%;
