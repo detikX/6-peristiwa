@@ -1,4 +1,17 @@
 .berita {
+    &#agustus {
+        .no-rotate {
+            @media screen and (max-width: 768px) {
+                position: relative;
+                height: 220px;
+            }
+        }
+        .foto {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
     .jepret {
         width: fit-content;
         border: 6px solid white;
