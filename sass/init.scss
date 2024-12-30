@@ -333,6 +333,7 @@ section {
 
 main {
     overflow-x: clip;
+    background: black;
     // background: $colorred;
 }
 
@@ -695,7 +696,7 @@ section:nth-child(3) {
 
 section:nth-child(4) {
     strong {
-        color: var(--color-secondary);
+        color: #1b1988;
     }
     --color-selector: var(--color-primary);
     // --image: url("../img/darurat.png");
@@ -725,4 +726,12 @@ section:nth-child(7) {
     }
     --color-selector: var(--color-green-2);
     // --image: url("../img/gamma.png");
+}
+
+.linex {
+    width: 85%;
+    // background: black;
+    height: 2px;
+    margin: 24px auto;
+    background: linear-gradient(to right, black, #ccc, black);
 }
