@@ -141,3 +141,15 @@
         background: linear-gradient(to top, black, rgba(black, 0.3), black);
     }
 }
+
+.infox {
+    background: #0e3e5e;
+    padding: 8px;
+    border-top: 3px solid #307fb5;
+    p {
+        margin-bottom: 0;
+        font-family: "Fraunces" !important;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
