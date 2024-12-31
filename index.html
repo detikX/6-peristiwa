@@ -5,12 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kaleidoskop 2024</title>
         <link rel="stylesheet" href="sass/bootstrap.min.css">
+        <link rel="stylesheet" href="sass/animate.min.css">
+        <link rel="stylesheet" href="sass/aos.css">
         <link rel="stylesheet" href="sass/style.css">
     </head>
+    <!--     
+kolase ditambah2
+dibuat pembatas antar section
+dibuat hidden diawal
+tambah garis panah kecil
+foto granmax
+
+birunya disamain -->
     <body>
         <main>
             <section class="banner">
-                <div class="title">
+                <div class="title  wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                     <h2>
                         <strong>6 Peristiwa Besar</strong>
                         Sepanjang 2024
@@ -24,24 +34,31 @@
                 </div>
                 <div class="gambar">
                     <div class="d-block">
-                        <div class="gambar__one rotate-left">
+                        <div class="gambar__one rotate-left wow animate__animated animate__fadeIn" data-wow-delay="1s">
                             <img src="img/bumper/februari2.jpeg" alt="">
                         </div>
-                        <div class="gambar__one rotate-right">
+                        <div class="gambar__one rotate-right wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
                             <img src="img/april.jpeg" alt="">
                         </div>
-                        <div class="gambar__one ">
+                        <div class="gambar__one wow animate__animated animate__fadeIn" data-wow-delay="2s">
                             <img src="img/bem-si.jpeg" alt="">
                         </div>
-                        <div class="gambar__one rotate-left">
+                        <div class="gambar__one rotate-left wow animate__animated animate__fadeIn" data-wow-delay="2.5s">
                             <img src="img/bumper/september.jpeg" alt="">
                         </div>
-                        <div class="gambar__one rotate-right">
+                        <div class="gambar__one rotate-right wow animate__animated animate__fadeIn" data-wow-delay="3s">
                             <img src="img/bumper/oktober.jpeg" alt="">
                         </div>
-                        <div class="gambar__one">
+                        <div class="gambar__one wow animate__animated animate__fadeIn" data-wow-delay="3.5s">
                             <img src="img/bumper/november.jpeg" alt="">
                         </div>
+                    </div>
+                </div>
+                <div class="ceksx wow animate__animated animate__fadeIn" data-wow-delay="4s">
+                    <div class="field">
+                        <!-- <div class="mouse"></div> -->
+                        <div class="scroll"></div>
+                        <!-- <div class="arrow"></div> -->
                     </div>
                 </div>
             </section>
@@ -268,8 +285,11 @@
                             <p>
                                 Pada Selasa, 22 Oktober 2024, Kejagung mendapatkan bukti komunikasi akan ada transaksi miliaran rupiah yang akan diberikan kepada tiga hakim tersebut. Empat tersangka ditangkap, yakni Lisa Rahmat, Erintuah Damanik, Heru Hanindyo, dan Mangapul. Dari hasil pemeriksaan keempat tersangka, Kejagung mendapatkan satu nama lain yang diduga ikut terlibat, yakni mantan Kepala Badan Diklat Hukum dan Peradilan Mahkamah Agung Zarof Ricar. Zarof, yang sebelumnya tidak masuk radar Kejagung, pun diburu. Rumahnya di Jakarta digeledah.
                             </p>
-                            <div class="jepret">
+                            <div class="jepret position-relative">
                                 <img src="img/oktober.jpeg" alt="">
+                                <div class="boxx ke-kiri">
+                                    <div class="namex">Mantan pejabat MA, Zarof Ricar</div>
+                                </div>
                             </div>
                             <p>
                                 Saat menggeledah rumah Zarof, tim penyidik Kejagung menemukan uang bergepok-gepok dalam empat boks kontainer penuh. Nilainya mencapai Rp 920 miliar. Di rumah itu, Kejagung juga menemukan logam mulia seberat 51 kilogram. Berdasarkan kesaksian Zarof, uang tersebut didapatnya dari hasil suap pengurusan sejumlah perkara sejak 2012. Salah satunya untuk kasus Ronald Tannur.
@@ -328,6 +348,7 @@
             </section>
         </main>
         <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/aos.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
         <script src="js/app.js"></script>
