@@ -4,6 +4,12 @@ $(document).ready(function () {
   new WOW().init();
 })
 
+$(".field").click(function () {
+  $('html, body').animate({
+    scrollTop: $("#firstx").offset().top
+  }, 2000);
+});
+
 
 var Pic = document.getElementById('pic').cloneNode();
 document.getElementById('container').appendChild(Pic);
@@ -22,10 +28,10 @@ tl.to(line, tl.duration() / 2, { opacity: R(0.1, 1), x: R(0, 300), ease: RoughEa
 function R(max, min) { return Math.random() * (max - min) + min };
 
 
-$(".wraping .judul").attr({ "data-aos": "fade-in", "data-aos-delay": "500", "data-aos-duration": "500", "data-aos-easing": "linear" });
+$(".wraping .judul").attr({ "data-aos": "fade-in", "data-aos-delay": "500", "data-aos-duration": "500" });
 
-$(".wraping .data p").attr({ "data-aos": "fade-in", "data-aos-delay": "700", "data-aos-duration": "500", "data-aos-easing": "linear" });
+$(".wraping .data p").attr({ "data-aos": "fade-in", "data-aos-delay": "700", "data-aos-duration": "500" });
 
-$(".wraping .jepret").attr({ "data-aos": "fade-in", "data-aos-delay": "700", "data-aos-duration": "500", "data-aos-easing": "linear" });
+$(".wraping .jepret").attr({ "data-aos": "fade-in", "data-aos-delay": "700", "data-aos-duration": "500" });
 
-// $(".wraping .foto").attr({ "data-aos": "fade-in", "data-aos-delay": "1000", "data-aos-duration": "500", "data-aos-easing": "linear" });
+// $(".wraping .foto").attr({ "data-aos": "fade-in", "data-aos-delay": "1000", "data-aos-duration": "500" });
